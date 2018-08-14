@@ -1,0 +1,11 @@
+{
+  "name": "good-citizen-toolkit",
+  "version": "1.0.0",
+  "description": "An open source repository of resources for the good citizen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

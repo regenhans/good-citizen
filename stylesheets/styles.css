@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700");
+/* line 5, ../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_grid.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 5, ../sass/_grid.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 9, ../sass/_grid.scss */
+.wrapper {
+  width: auto;
+  max-width: 80vw;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 274, ../node_modules/jeet/scss/_grid.scss */
+.wrapper::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 13, ../sass/_grid.scss */
+header {
+  width: auto;
+  max-width: 90vw;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 274, ../node_modules/jeet/scss/_grid.scss */
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 17, ../sass/_grid.scss */
+.splash-container {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* line 27, ../sass/_grid.scss */
+.half {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 274, ../node_modules/jeet/scss/_grid.scss */
+.half::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 48, ../node_modules/jeet/scss/_grid.scss */
+.half:last-child {
+  margin-right: 0%;
+}
+
+/* line 28, ../sass/_grid.scss */
+.third {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 274, ../node_modules/jeet/scss/_grid.scss */
+.third::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 33, ../node_modules/jeet/scss/_grid.scss */
+.third:nth-child(n) {
+  margin-right: 3%;
+  float: left;
+  clear: none;
+}
+/* line 39, ../node_modules/jeet/scss/_grid.scss */
+.third:nth-child(3n) {
+  margin-right: 0%;
+  float: right;
+}
+/* line 44, ../node_modules/jeet/scss/_grid.scss */
+.third:nth-child(3n + 1) {
+  clear: both;
+}
+
+/* line 29, ../sass/_grid.scss */
+.fifth, .project .project-image {
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 17.6%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+/* line 274, ../node_modules/jeet/scss/_grid.scss */
+.fifth::after, .project .project-image::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 48, ../node_modules/jeet/scss/_grid.scss */
+.fifth:last-child, .project .project-image:last-child {
+  margin-right: 0%;
+}
+
+@media screen and (max-width: 800px) {
+  /* line 33, ../sass/_grid.scss */
+  .splash-container {
+    height: auto;
+  }
+  /* line 35, ../sass/_grid.scss */
+  .splash-container h1 {
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* line 40, ../sass/_grid.scss */
+  .half, .third {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 205, ../node_modules/jeet/scss/_grid.scss */
+  .half:first-child, .third:first-child {
+    margin-left: auto;
+  }
+  /* line 209, ../node_modules/jeet/scss/_grid.scss */
+  .half:last-child, .third:last-child {
+    margin-right: auto;
+  }
+
+  /* line 44, ../sass/_grid.scss */
+  .wrapper {
+    width: auto;
+    max-width: 95vw;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 274, ../node_modules/jeet/scss/_grid.scss */
+  .wrapper::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+/* line 2, ../sass/_type.scss */
+html, body {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* line 8, ../sass/_type.scss */
+h1 {
+  font-size: 1.9em;
+}
+
+/* line 9, ../sass/_type.scss */
+h2 {
+  font-size: 1.4em;
+}
+
+/* line 10, ../sass/_type.scss */
+h3 {
+  font-size: 1.1em;
+}
+
+/* line 12, ../sass/_type.scss */
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+/* line 10, ../sass/styles.scss */
+header {
+  position: relative;
+}
+/* line 12, ../sass/styles.scss */
+header a {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  text-decoration: none;
+  padding: 10px;
+  background: #9DFFD5;
+  border: 1px solid #9DFFD5;
+  color: #2E38B0;
+  cursor: pointer;
+}
+/* line 22, ../sass/styles.scss */
+header a:hover {
+  background: none;
+}
+
+/* line 28, ../sass/styles.scss */
+.manual {
+  width: 7vw;
+  margin-right: 20px;
+}
+
+/* line 33, ../sass/styles.scss */
+.category {
+  border: 1px solid rgba(192, 192, 192, 0.3);
+  border-radius: 4px;
+}
+/* line 36, ../sass/styles.scss */
+.category h2 {
+  padding: 20px 5px;
+}
+
+/* line 40, ../sass/styles.scss */
+.category-title {
+  width: 90%;
+  margin: auto;
+}
+
+@keyframes bigcard {
+  from {
+    width: 90%;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* line 51, ../sass/styles.scss */
+.project {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  padding: 20px 5px;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.3);
+}
+/* line 57, ../sass/styles.scss */
+.project:hover {
+  animation-name: bigcard;
+  animation-duration: 1s;
+}
+/* line 64, ../sass/styles.scss */
+.project .project-name {
+  font-weight: 600;
+}
+
+/* line 69, ../sass/styles.scss */
+.resource-form {
+  display: none;
+  position: absolute;
+  top: 40vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+/* line 76, ../sass/styles.scss */
+.resource-form form {
+  margin: auto;
+  width: 45%;
+  border: 3px outset #FF77F9;
+  background: white;
+  box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.5);
+  padding: 20px;
+  position: relative;
+}
+/* line 84, ../sass/styles.scss */
+.resource-form form .closewindow {
+  position: absolute;
+  top: -12;
+  right: -12;
+  background: white;
+  border: 3px outset black;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* line 97, ../sass/styles.scss */
+.resource-form form input {
+  max-width: 100%;
+}
+/* line 100, ../sass/styles.scss */
+.resource-form form input[type="text"] {
+  border: none;
+  font-size: 1.8em;
+  width: 100%;
+  color: gray;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+/* line 109, ../sass/styles.scss */
+.resource-form form input[type="button"] {
+  border: none;
+  background: #9DFFD5;
+  border: 1px solid #9DFFD5;
+  color: #2E38B0;
+  padding: 6.66667px 20px;
+  font-size: 1.3em;
+  display: block;
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  cursor: pointer;
+  font-family: 'Ubuntu Mono', monospace;
+}
+/* line 123, ../sass/styles.scss */
+.resource-form form input[type="button"]:hover {
+  background: white;
+}
+
+@media screen and (max-width: 700px) {
+  /* line 132, ../sass/styles.scss */
+  header {
+    display: none;
+  }
+}

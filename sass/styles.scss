@@ -1,0 +1,135 @@
+@import "../node_modules/jeet/scss/index";
+@import "compass/reset";
+@import "compass/typography/vertical_rhythm";
+@import "units";
+@import "grid";
+@import "type";
+
+
+// header
+header{
+	position: relative;
+	a{
+		position: absolute;
+		right: 0px;
+		top: $space;
+		text-decoration: none;
+		padding:10px;
+		background: $green;
+		border: 1px solid $green;
+		color: $purple;
+		cursor: pointer;
+		&:hover{
+			background: none;
+		}
+	}
+}
+
+.manual{
+	width:7vw;
+	margin-right: $space;
+}
+
+.category{
+	border: 1px solid $gray-soft;
+	border-radius: 4px;
+	h2{
+		padding: $space $space/4;
+	}
+}
+.category-title{
+	width: 90%;
+	margin: auto;
+}
+@keyframes bigcard {
+    from {width: 90%;}
+    to {width: 100%;}
+}
+
+
+
+.project{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	padding: 20px 5px;
+	border-bottom: 1px solid $gray-soft;
+	&:hover{
+		animation-name: bigcard;
+    	animation-duration: 1s;
+	}
+	.project-image{
+		@extend .fifth;
+	}
+	.project-name{
+		font-weight: 600;
+	}
+}
+
+.resource-form{
+	display: none;
+	position: absolute;
+	top: 40vh;
+	width: 100vw;
+	align-items: center;
+	justify-content: center;
+	form{
+		margin: auto;
+		width: 45%;
+		border: 3px outset $pink;
+		background: white;
+		box-shadow: 5px 5px 5px rgba(100,100,100,0.5); 
+		padding: $space;
+		position: relative;
+		.closewindow{
+			position: absolute;
+			top: -12;
+			right: -12;
+			background: white;
+			border: 3px outset black;
+			width: 25px;
+			height: 25px;
+			display: flex;
+			align-items:center;
+			justify-content: center;
+			cursor: pointer;
+		}
+		input{
+			max-width: 100%;
+		}
+		input[type="text"]{
+			border: none;
+			font-size: 1.8em;
+			width: 100%;
+			color: gray;
+			padding-bottom: $space/2;
+			margin-top: $space;
+			margin-bottom: $space*2;
+		}
+		input[type="button"]{
+			border: none;
+			background: $green;
+			border: 1px solid $green;
+			color: $purple;
+			padding: $space/3 $space;
+			font-size: 1.3em;
+			display: block;
+			position: absolute;
+			right: $space*2;
+			bottom: $space;
+			cursor: pointer;
+			font-family: 'Ubuntu Mono', monospace;
+		}
+		input[type="button"]:hover{
+			background: white;
+
+		}
+	}
+}
+
+
+@media screen and(max-width:700px) {
+	header{
+		display: none;
+	}
+}

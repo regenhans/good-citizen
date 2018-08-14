@@ -1,0 +1,47 @@
+img{
+	max-width: 100%;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.wrapper{
+	@include center(80vw);
+}
+
+header{
+	@include center(90vw);
+}
+
+.splash-container{
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+}
+
+
+// COLUMNS
+.half{@include column(1/2);}
+.third{@include column(1/3, $cycle:3);}
+.fifth{@include column(1/5);}
+
+
+@media screen and(max-width:800px){
+	.splash-container{
+		height: auto;
+		h1{
+			padding: $space;
+			text-align:center;
+		}
+	}
+	.half, .third{
+		@include stack();
+	}
+
+	.wrapper{
+		@include center(95vw);
+	}
+}
